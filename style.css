@@ -10,9 +10,9 @@ Version: 1.2
 /** Base Styles
 --------------------------------------------------------------*/
 :root {
-  --accent-color: #F4BE37;
+  --accent-color: #F0AA63;
   --secondary-color: #E2EAF1;
-  --dark-color: #092035;
+  --dark-color: #021737;
   --grey-color: #E2EAF1;
   --body-text-color: #7C8990;
   --light-text-color: #9CA5AD;
@@ -276,7 +276,7 @@ a.btn-yellow:hover,
 .card-dark {
   min-height: 254px;
   color: #9CA5AD;
-  background: rgba(9, 32, 53, 0.9);
+  background: rgba(6, 47, 112, 0.8);
 }
 .card-dark h3 {
   color: #F4BE37;
@@ -287,6 +287,31 @@ a.btn-yellow:hover,
 }
 .card-dark a:hover {
   color: #FFFFFF;
+}
+
+
+
+/*-----------------------------------------------
+/* Overlay for the #intro banner section */
+#intro {
+  position: relative;
+  overflow: hidden;
+}
+
+#intro::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(9, 32, 53, 0.18); /* Black overlay, 50% opacity */
+  z-index: 1;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+/* Ensure content and image are above the overlay */
+#intro .container,
+#intro .jarallax-img {
+  position: relative;
+  z-index: 2;
 }
 
 /* Post Item
