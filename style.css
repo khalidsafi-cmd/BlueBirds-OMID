@@ -273,12 +273,18 @@ a.btn-yellow:hover,
 .logo {
   opacity: 0.9;
   transition: opacity 0.3s ease-out;
+  margin-left: 35%;
 }
 
 .logo:hover {
   opacity: 1;
 }
 /*------------------------------------------------------------*/
+
+/* moving nav to the right */
+.nav-move-right {
+  margin-right: 2%; /* Adjust as needed */
+}
 
 /* dark card */
 .card-body {
@@ -300,8 +306,6 @@ a.btn-yellow:hover,
   color: #FFFFFF;
 }
 
-
-
 /*-----------------------------------------------
 /* Overlay for the #intro banner section */
 #intro {
@@ -313,7 +317,7 @@ a.btn-yellow:hover,
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(9, 32, 53, 0.18); /* Black overlay, 50% opacity */
+  /* background: rgba(9, 32, 53, 0.18); Black overlay, 50% opacity */
   z-index: 1;
   pointer-events: none; /* Allows clicks to pass through */
 }
@@ -323,6 +327,7 @@ a.btn-yellow:hover,
 #intro .jarallax-img {
   position: relative;
   z-index: 2;
+  filter: grayscale(0.3); /* Optional: grayscale effect on the background image */
 }
 
 /* Post Item
@@ -485,6 +490,10 @@ a.btn-yellow:hover,
   .blockquote {
     padding: 40px;
   }
+
+  .logo {
+    margin-left: 0; /* Remove or reduce margin on mobile */
+  }
 }
 
 /* display text */
@@ -507,7 +516,9 @@ a:hover {
 .nav-link {
   color: #9099a7;
   position: relative;
+  font-size: 1.2rem;
 }
+
 .nav-link:not(.dropdown-toggle):after {
   content: '';
   position: absolute;
