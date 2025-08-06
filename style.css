@@ -201,17 +201,17 @@ a.btn-yellow:hover,
 }
 
 .dot-3 {
-  background-color: #f74d75;
+  background-color: #F0AA63;
   animation: dot-3-move 2s ease infinite, index 6s ease infinite;
 }
 
 .dot-2 {
-  background-color: #10beae;
+  background-color: #7AC9FC;
   animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
 }
 
 .dot-1 {
-  background-color: #ffe386;
+  background-color: #044CBC;
   animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
 }
 
@@ -271,8 +271,6 @@ a.btn-yellow:hover,
 
 /* Styling for logo */
 .logo {
-  opacity: 0.9;
-  transition: opacity 0.3s ease-out;
   margin-left: 35%;
 }
 
@@ -292,7 +290,7 @@ a.btn-yellow:hover,
 }
 .card-dark {
   min-height: 254px;
-  color: #9CA5AD;
+  color: #d9e8fb;
   background: rgba(6, 47, 112, 0.8);
 }
 .card-dark h3 {
@@ -317,7 +315,7 @@ a.btn-yellow:hover,
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  /* background: rgba(9, 32, 53, 0.18); Black overlay, 50% opacity */
+  background: rgba(9, 32, 53, 0.45); /* Black overlay, 50% opacity */
   z-index: 1;
   pointer-events: none; /* Allows clicks to pass through */
 }
@@ -327,8 +325,20 @@ a.btn-yellow:hover,
 #intro .jarallax-img {
   position: relative;
   z-index: 2;
-  filter: grayscale(0.3); /* Optional: grayscale effect on the background image */
 }
+
+/*banner image style for having better contrast*/ 
+.jarallax-img {
+  filter: blur(1.9px) brightness(0.8); /* Optional: add slight blur for a softer look */
+}
+
+/* Example: Add to your text container or headings*/
+#intro .container,
+#intro h1, #intro h2, #intro h3, #intro p, .navbar {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Centering text under chart */
 
 /* Post Item
 --------------------------------------------------------------*/
