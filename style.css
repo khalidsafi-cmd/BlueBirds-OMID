@@ -331,6 +331,12 @@ a.btn-yellow:hover,
 }
 
 /* Centering text under chart */
+.chart-box, .center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 /* Post Item
 --------------------------------------------------------------*/
