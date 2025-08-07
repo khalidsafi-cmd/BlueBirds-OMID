@@ -262,13 +262,20 @@ a.btn-yellow:hover,
 }
 
 /* Styling for logo */
+
+
 .logo {
-  margin-left: 35%;
+  width: 11rem;
+  margin-left: 5rem; /* Adjust width as needed */
 }
 
-.logo:hover {
-  opacity: 1;
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
 }
+
+
 /*------------------------------------------------------------*/
 
 /* moving nav to the right */
