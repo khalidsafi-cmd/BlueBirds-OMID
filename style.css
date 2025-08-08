@@ -308,6 +308,19 @@ a.btn-yellow:hover,
   color: #FFFFFF;
 }
 
+/* Increase hamburger menu icon size */
+.navbar-toggler ion-icon {
+  font-size: 2.2rem; /* Increase this value as needed */
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+/* Optionally increase the button size for better touch area */
+.navbar-toggler {
+  padding: 0.75rem 1rem;
+  font-size: 1.5rem;
+}
+
 /*-----------------------------------------------
 /* Overlay for the #intro banner section */
 #intro {
@@ -576,8 +589,8 @@ section header .text-muted {
   text-transform: uppercase;
 }
 .dropdown-menu-dark {
-  background-color: var(--dark-color);
+  background-color: rgba(2, 23, 55, 0.75);
 }
 .offcanvas.show {
-  background-color: var(--dark-color);
+  background-color: rgba(2, 23, 55, 0.75);
 }
