@@ -363,6 +363,17 @@ a.btn-yellow:hover,
   text-align: center;
 }
 
+/* about section padding between elements on small screens */
+@media (max-width: 768px) {
+  .padb div:nth-child(1) {
+    padding-bottom: 2rem; /* Adjust as needed */
+  }
+
+    .padb div:nth-child(2) {
+    padding-bottom: 2rem; /* Adjust as needed */
+  }
+}
+
 /* Post Item
 --------------------------------------------------------------*/
 .post-item {
