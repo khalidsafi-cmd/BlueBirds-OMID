@@ -83,6 +83,9 @@
 			    <li class="nav-item">
 			      <a class="nav-link me-4" href="#donate">Donate</a>
 			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="#contact-us">Contact Us</a>
+			    </li>
 			  </ul>
 			 </div>
 		  </div>
@@ -360,7 +363,7 @@
  	<img src="images/banner.webp" class="jarallax-img" />
 </section>
 
-<section class="contact-information padding-large">
+<section id="contact-us" class="contact-information padding-large">
 	<div class="container" bis_skin_checked="1">
 		<div class="row" bis_skin_checked="1">
 			<div class="col-md-6 mb-3" bis_skin_checked="1">
@@ -384,7 +387,8 @@
 				
 				<div class="contact-information" bis_skin_checked="1">
 					<h2>Send A Message</h2>
-					<form name="contactform" action="contact.php" method="post" class="form-group contact-form mt-4">
+					<form name="contactform"  action="https://api.web3forms.com/submit" method="post" class="form-group contact-form mt-4">
+						 <input type="hidden" name="access_key" value="1c69481d-7a49-4a92-9a0f-70f6d40b9f91">
 						<div class="row" bis_skin_checked="1">
 					    	<div class="col-md-6" bis_skin_checked="1">
 								<input type="text" minlength="2" name="name" placeholder="Name" class="form-control" required="">
