@@ -274,6 +274,11 @@ a.btn-yellow:hover,
   margin-left: 5rem; /* Adjust width as needed */
 }
 
+footer .logo {
+  margin: 0 !important;
+  
+}
+
 @media (max-width: 768px) {
   .logo {
     margin-left: 0;
