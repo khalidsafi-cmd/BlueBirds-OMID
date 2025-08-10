@@ -46,6 +46,15 @@ a:hover {
   text-decoration: none;
 }
 
+/* image size */ 
+
+.lgpostImg {
+  width: 370px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
 /* Image Hover Effects
 ------------------------------------------------------------- */
 .zoom-effect {
