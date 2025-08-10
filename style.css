@@ -437,11 +437,17 @@ footer .logo {
 #footer {
     background-color: #111;
 }
-#footer, #footer a {
+#footer {
     color: #777;
 }
-#footer a:hover {
-    color: #a29d92;
+
+footer a {
+    color: #e9e7e7 !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F0AA63 !important;
 }
 #footer ul {
   list-style: none;
