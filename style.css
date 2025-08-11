@@ -4,8 +4,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
-
 /** Base Styles
 --------------------------------------------------------------*/
 :root {
@@ -60,6 +58,7 @@ a:hover {
   height: 250px;
   object-fit: cover;
   display: block;
+  ;
 }
 
 /* Image Hover Effects
