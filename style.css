@@ -467,7 +467,6 @@ footer a:hover {
 }
 
 /* email word break */
-
 @media (max-width: 768px) {
 footer a[href^="mailto:"] {
   word-break: break-all;
@@ -638,4 +637,55 @@ section header .text-muted {
 }
 .offcanvas.show {
   background-color: rgba(2, 23, 55, 0.75);
+}
+
+
+/* Hide WhatsApp float icon when preloader is visible */
+.preloader-hidden {
+    display: none !important;
+}
+
+/* Whatsapp Icon styles and navigation*/
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: visible; /* Allow label to show outside */
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+}
+
+.whatsapp-label {
+    position: absolute;
+    right: 70px; /* Move label to left side of button */
+    background-color: #25d366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.whatsapp-float:hover .whatsapp-label {
+    opacity: 1;
+    transform: translateX(0);
 }
