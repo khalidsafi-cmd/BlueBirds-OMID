@@ -467,7 +467,6 @@ footer a:hover {
 }
 
 /* email word break */
-
 @media (max-width: 768px) {
 footer a[href^="mailto:"] {
   word-break: break-all;
@@ -642,7 +641,7 @@ section header .text-muted {
 
 
 /* Hide WhatsApp float icon when preloader is visible */
-#overlayer ~ .whatsapp-float {
+.preloader-hidden {
     display: none !important;
 }
 

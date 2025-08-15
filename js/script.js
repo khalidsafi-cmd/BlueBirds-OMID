@@ -132,6 +132,8 @@
     $(window).load(function() {
       $("#overlayer").fadeOut("slow");
       $('body').addClass('loaded');
+      // Show WhatsApp icon after preloader
+      $('.whatsapp-float').removeClass('preloader-hidden');
     })
 
     initScrollNav();
