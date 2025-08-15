@@ -641,6 +641,11 @@ section header .text-muted {
 }
 
 
+/* Hide WhatsApp float icon when preloader is visible */
+#overlayer ~ .whatsapp-float {
+    display: none !important;
+}
+
 /* Whatsapp Icon styles and navigation*/
 
 .whatsapp-float {
